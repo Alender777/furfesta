@@ -78,6 +78,7 @@ export default function Hero() {
           <source media="(max-width: 768px)" srcSet={publicAsset("/images/hero-mobile-fg.webp")} />
           <img src={publicAsset("/images/pixel.gif")} alt="" className={styles.fg} />
         </picture>
+        <div className={styles.fade} aria-hidden="true" />
       </div>
 
       <div className={styles.copy}>
