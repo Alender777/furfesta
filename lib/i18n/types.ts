@@ -152,6 +152,8 @@ export type Messages = {
     mapAlt: string;
     addressLabel: string;
     address: string;
+    transitTitle: string;
+    transit: string;
     googleMapTitle: string;
     openMap: string;
   };

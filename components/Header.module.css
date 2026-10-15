@@ -60,7 +60,7 @@
 }
 
 .headerSolid .logoImage {
-  filter: brightness(0);
+  filter: brightness(0) invert(10%);
 }
 
 @media (max-width: 768px) {
@@ -101,12 +101,12 @@
 }
 
 .headerSolid .iconBtn {
-  color: var(--color-text-muted);
+  color: #1a1a1a;
 }
 
 .headerSolid .iconBtn:hover {
   background: rgba(184, 148, 95, 0.12);
-  color: var(--color-text);
+  color: #1a1a1a;
 }
 
 .headerDark .iconBtn {
@@ -161,7 +161,7 @@
 }
 
 .headerSolid .menuBtn span {
-  background: var(--color-text);
+  background: #1a1a1a;
 }
 
 .headerDark .menuBtn span {

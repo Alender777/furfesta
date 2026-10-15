@@ -43,6 +43,11 @@ export default function VenueContent() {
             </p>
           </div>
 
+          <div className={styles.transit}>
+            <h2>{page.transitTitle}</h2>
+            <p>{page.transit}</p>
+          </div>
+
           <figure className={styles.mapBlock}>
             <Image
               src={publicAsset("/images/venue-map-zh.jpg")}

@@ -17,11 +17,11 @@
 }
 
 .dark .globeBtn {
-  color: var(--color-text-muted);
+  color: #1a1a1a;
 }
 
 .dark .globeBtn:hover {
-  color: var(--color-text);
+  color: #1a1a1a;
 }
 
 .light .globeBtn {

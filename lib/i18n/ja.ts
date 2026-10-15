@@ -205,9 +205,12 @@ export const ja: Messages = {
     label: "会場",
     name: "南港瓶蓋工廠台北製造所",
     halls: "A2棟 + F棟",
-    mapAlt: "南港瓶蓋工廠台北製造所の会場地図。南港駅から忠孝東路七段252巷を歩いて到着できます。",
+    mapAlt: "南港瓶蓋工廠台北製造所の会場地図。南港駅から歩いて会場へ向かう経路を示しています。",
     addressLabel: "住所",
     address: "台北市南港區南港路二段13號",
+    transitTitle: "交通案内",
+    transit:
+      "台鉄、高鉄、または台北メトロ板南線で南港駅までお越しください。捷運1A出口を出て、忠孝東路七段を西へ進み、忠孝東路七段325巷を北へまっすぐ進むと会場に着きます。",
     googleMapTitle: "Google マップ",
     openMap: "Google マップで開く",
   },

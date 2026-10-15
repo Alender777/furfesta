@@ -204,9 +204,12 @@ export const en: Messages = {
     label: "Venue",
     name: "Nangang Bottle Cap Factory (POPOP Taipei)",
     halls: "Building A2 + Building F",
-    mapAlt: "Map of Nangang Bottle Cap Factory (POPOP Taipei). Walk from Nangang Station along Lane 252, Zhongxiao East Road Section 7.",
+    mapAlt: "Map of Nangang Bottle Cap Factory (POPOP Taipei), showing the walk from Nangang Station.",
     addressLabel: "Address",
     address: "No. 13, Section 2, Nangang Road, Nangang District, Taipei",
+    transitTitle: "Getting there",
+    transit:
+      "Take Taiwan Railways, Taiwan High Speed Rail, or the Taipei Metro Bannan Line to Nangang Station. Leave from MRT exit 1A, walk west along Section 7 of Zhongxiao East Road to Lane 325, then go straight north to the venue.",
     googleMapTitle: "Google Map",
     openMap: "Open in Google Maps",
   },
