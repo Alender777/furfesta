@@ -1,7 +1,9 @@
 "use client";
 
 import { Fragment } from "react";
+import Image from "next/image";
 import { useLocale } from "@/contexts/LocaleContext";
+import { publicAsset } from "@/lib/publicAsset";
 import styles from "./VolunteerContent.module.css";
 
 function Lines({ text }: { text: string }) {
@@ -32,9 +34,18 @@ export default function VolunteerContent() {
 
   return (
     <>
-      <div className="page-hero">
+      <div className={`page-hero ${styles.hero}`}>
         <div className="container">
-          <h1>{page.title}</h1>
+          <h1 className={styles.title}>
+            <Image
+              src={publicAsset("/images/volunteer-title.png")}
+              alt={page.title}
+              width={1024}
+              height={256}
+              priority
+              className={styles.banner}
+            />
+          </h1>
           <p className={styles.period}>
             <span className={styles.periodLabel}>{page.periodLabel}</span>
             {page.period ? <span className={styles.periodValue}>{page.period}</span> : null}

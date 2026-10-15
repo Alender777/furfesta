@@ -1,3 +1,19 @@
+.hero h1.title {
+  margin: 0;
+  line-height: 0;
+}
+
+.hero h1.title::after {
+  content: none;
+}
+
+.banner {
+  display: block;
+  width: min(100%, 880px);
+  height: auto;
+  margin: 0 auto;
+}
+
 .period {
   margin-top: 1.35rem;
   color: var(--color-text-muted);
