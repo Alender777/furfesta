@@ -1,0 +1,135 @@
+.period {
+  margin-top: 1.35rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+}
+
+.periodValue {
+  display: block;
+  margin-top: 0.4rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+}
+
+.section {
+  padding: 3.5rem 0 5.5rem;
+}
+
+.body {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.block + .block {
+  margin-top: 3.25rem;
+}
+
+.heading {
+  margin: 0 0 1.15rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.heading::before {
+  content: "●";
+  margin-right: 0.55rem;
+  color: var(--color-accent);
+}
+
+.notices,
+.benefits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.notices li,
+.benefits li,
+.intro,
+.shift p {
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: 1.95;
+}
+
+.notices li {
+  position: relative;
+  margin-bottom: 0.85rem;
+  padding-left: 1.15rem;
+}
+
+.notices li:last-child {
+  margin-bottom: 0;
+}
+
+.notices li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.78em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.benefits li {
+  position: relative;
+  margin-bottom: 0.7rem;
+  padding-left: 1.45rem;
+}
+
+.benefits li:last-child {
+  margin-bottom: 0;
+}
+
+.benefits li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+.intro {
+  margin: 0 0 1.35rem;
+  padding: 1rem 1.15rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.intro::before {
+  content: "★";
+  margin-right: 0.45rem;
+  color: var(--color-accent);
+}
+
+.shifts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.time {
+  white-space: nowrap;
+}
+
+.shift h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.02rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.shift h3::before {
+  content: "▶";
+  margin-right: 0.45rem;
+  color: var(--color-accent);
+  font-size: 0.85em;
+}
+
+.shift p {
+  margin: 0;
+}

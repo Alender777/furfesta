@@ -37,7 +37,7 @@ export const en: Messages = {
     venue: "Venue",
     notes: "Notice",
     register: "Registration",
-    volunteerHint: "Coming soon",
+    volunteerHint: "Recruitment dates TBA",
     venueHint: "Nangang Bottle Cap Factory (POPOP Taipei)",
     notesHint: "Details coming soon",
     registerHint: "Registration coming soon",
@@ -204,5 +204,50 @@ export const en: Messages = {
     label: "Venue",
     name: "Nangang Bottle Cap Factory (POPOP Taipei)",
     halls: "Building A2 + Building F",
+  },
+  volunteerPage: {
+    title: "Volunteer",
+    periodLabel: "Recruitment period",
+    period: "",
+    noticeTitle: "Before you apply",
+    notices: [
+      "Please read the full duties and benefits, and sign up only if you are ready to help with this event.",
+      "Applicants must be at least 18 years old.",
+      "Eat breakfast before the morning meet-up. Do not work on an empty stomach.",
+      "Do not leave your post without permission from a captain-level staff member.",
+      "If illness, an accident, or another emergency keeps you from attending, report it immediately.",
+      "An unexcused absence means future applications to take part in this event will not be accepted.",
+    ],
+    benefitTitle: "Volunteer benefits",
+    benefits: ["Water and meals", "Exclusive souvenir", "Travel subsidy", "Free entry and one hour of rest"],
+    dutyTitle: "Duties",
+    dutyIntro: "Meet at 08:00 at the main entrance of Building A2 for roll call. Please eat breakfast first!",
+    shifts: [
+      {
+        time: "08:00–09:00",
+        detail:
+          "Setup: place booth tables and chairs, label booth numbers, hand out trash bags, set up the changing room, signs, and crowd-control tape. Everything must be ready.",
+      },
+      {
+        time: "09:00–10:30",
+        detail:
+          "Circle entrance: help circles queue and check tickets.\nGeneral entrance: guide the public queue and keep order on site.",
+      },
+      {
+        time: "10:30–16:00",
+        detail:
+          "Event hours: help guests buy tickets and enter with a stamp; staff the entrances, changing room, and bag area; give on-the-spot reminders about the rules; take circle parcel registrations.",
+      },
+      {
+        time: "16:30–17:00",
+        detail:
+          "Close: ticket gates are exit only. Collect trash from circles and the venue, and ask attendees to leave completely by 5 p.m.",
+      },
+      {
+        time: "17:00–18:00",
+        detail:
+          "Strike: take down tables and chairs and restore the venue. This may start earlier, depending on when attending circles leave.",
+      },
+    ],
   },
 };

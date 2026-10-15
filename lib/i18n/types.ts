@@ -150,4 +150,16 @@ export type Messages = {
     name: string;
     halls: string;
   };
+  volunteerPage: {
+    title: string;
+    periodLabel: string;
+    period: string;
+    noticeTitle: string;
+    notices: string[];
+    benefitTitle: string;
+    benefits: string[];
+    dutyTitle: string;
+    dutyIntro: string;
+    shifts: { time: string; detail: string }[];
+  };
 };
