@@ -11,17 +11,20 @@
 }
 
 .footer {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.72);
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
   color: #fff;
-  font-size: 0.95rem;
 }
 
 .footer:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: #fff;
-  color: #fff;
+  background: transparent;
+  border-color: transparent;
+  color: rgba(255, 255, 255, 0.72);
+  transform: none;
 }
 
 .contact {
@@ -49,21 +52,18 @@
   background: var(--color-bg-alt);
 }
 
-.footerPlurk {
-  background: #ff574d;
-  border-color: #ff574d;
-  color: #fff;
-}
-
-.footerPlurk:hover {
-  background: #ff6d64;
-  border-color: #ff6d64;
-  color: #fff;
-}
-
+.footerPlurk,
 .footerEmail {
-  color: #fff;
   background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.footerPlurk:hover,
+.footerEmail:hover {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .footerFacebook {

@@ -20,47 +20,44 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <div className={styles.top}>
           <Link href="/" className={styles.brand}>
             <Image
               src={publicAsset("/images/logo-lockup-footer.png")}
               alt={brand}
               width={606}
-              height={832}
+              height={720}
               className={styles.logo}
             />
           </Link>
 
-          <div className={styles.tools}>
-            <nav className={styles.links}>
-              {navItems.map((item) => (
-                <Link key={item.href} href={item.href} className={styles.link}>
-                  {t.nav[item.key as NavKey]}
-                </Link>
-              ))}
-            </nav>
-            <div className={styles.social}>
-              <SocialIconLink
-                href={siteData.contact.plurk}
-                label={t.footer.plurkAria}
-                variant="footer"
-                iconClassName={socialStyles.footerPlurk}
-              >
-                <PlurkIcon size={16} />
-              </SocialIconLink>
-              <SocialIconLink
-                href={`mailto:${siteData.contact.email}`}
-                label={t.footer.emailAria}
-                variant="footer"
-                iconClassName={socialStyles.footerEmail}
-              >
-                <EmailIcon size={15} />
-              </SocialIconLink>
-            </div>
-          </div>
-        </div>
+          <p className={styles.tagline}>{t.event.tagline}</p>
 
-        <p className={styles.tagline}>{t.event.tagline}</p>
+          <nav className={styles.links}>
+            {navItems.map((item) => (
+              <Link key={item.href} href={item.href} className={styles.link}>
+                {t.nav[item.key as NavKey]}
+              </Link>
+            ))}
+          </nav>
+
+          <div className={styles.social}>
+            <SocialIconLink
+              href={siteData.contact.plurk}
+              label={t.footer.plurkAria}
+              variant="footer"
+              iconClassName={socialStyles.footerPlurk}
+            >
+              <PlurkIcon size={22} />
+            </SocialIconLink>
+            <SocialIconLink
+              href={`mailto:${siteData.contact.email}`}
+              label={t.footer.emailAria}
+              variant="footer"
+              iconClassName={socialStyles.footerEmail}
+            >
+              <EmailIcon size={22} />
+            </SocialIconLink>
+          </div>
         <p className={styles.copyright}>
           © {new Date().getFullYear()} {brand} {t.footer.copyright}
         </p>
