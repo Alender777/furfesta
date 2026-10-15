@@ -44,8 +44,8 @@ export default function VolunteerContent() {
             <Image
               src={publicAsset("/images/volunteer-characters.png")}
               alt=""
-              width={612}
-              height={268}
+              width={2200}
+              height={1010}
               priority
               className={styles.art}
             />
