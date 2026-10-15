@@ -1,0 +1,34 @@
+.page {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--header-height) + 3rem) 1.5rem 4rem;
+  background: var(--color-bg-alt);
+  text-align: center;
+}
+
+.inner {
+  max-width: 480px;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 500;
+  margin: 1rem 0;
+  letter-spacing: 0.15em;
+}
+
+.divider {
+  width: 48px;
+  height: 1px;
+  background: var(--color-accent);
+  margin: 1.5rem auto;
+}
+
+.desc {
+  color: var(--color-text-muted);
+  font-weight: 300;
+  line-height: 1.85;
+}

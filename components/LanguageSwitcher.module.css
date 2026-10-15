@@ -1,0 +1,74 @@
+.wrapper {
+  position: relative;
+}
+
+.globeBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s, opacity 0.2s;
+}
+
+.globeBtn:hover {
+  background: rgba(184, 148, 95, 0.12);
+}
+
+.dark .globeBtn {
+  color: var(--color-text-muted);
+}
+
+.dark .globeBtn:hover {
+  color: var(--color-text);
+}
+
+.light .globeBtn {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.light .globeBtn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 7.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  z-index: 200;
+  overflow: hidden;
+}
+
+.menuItem {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: var(--color-text-muted);
+  transition: background 0.2s, color 0.2s;
+}
+
+.menuItem:hover {
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+}
+
+.menuItemActive {
+  color: var(--color-accent);
+  background: rgba(184, 148, 95, 0.08);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    right: 0;
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#faf8f5"/>
+      <stop offset="50%" stop-color="#f3ede4"/>
+      <stop offset="100%" stop-color="#e8e2d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg4)"/>
+  <line x1="300" y1="400" x2="500" y2="400" stroke="rgba(184,148,95,0.5)" stroke-width="1"/>
+  <text x="400" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="rgba(107,101,96,0.7)" letter-spacing="3">創作展示</text>
+</svg>
