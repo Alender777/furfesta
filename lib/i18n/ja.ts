@@ -4,6 +4,7 @@ export const ja: Messages = {
   nav: {
     home: "ホーム",
     event: "イベント",
+    venue: "会場",
     circles: "サークル",
     about: "概要",
     contact: "お問い合わせ",

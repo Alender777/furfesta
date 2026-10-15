@@ -4,6 +4,7 @@ export const ko: Messages = {
   nav: {
     home: "홈",
     event: "행사",
+    venue: "장소",
     circles: "딜러스 덴",
     about: "소개",
     contact: "문의",

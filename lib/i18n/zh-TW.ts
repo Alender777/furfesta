@@ -4,6 +4,7 @@ export const zhTW: Messages = {
   nav: {
     home: "首頁",
     event: "活動",
+    venue: "會場",
     circles: "社團",
     about: "關於",
     contact: "聯絡",
@@ -198,7 +199,7 @@ export const zhTW: Messages = {
     register: "活動報名",
   },
   venuePage: {
-    title: "場地資訊",
+    title: "會場",
     subtitle: "FurFesta 2027 活動場館",
     label: "活動場館",
     name: "南港瓶蓋工廠台北製造所",

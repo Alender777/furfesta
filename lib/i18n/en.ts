@@ -4,6 +4,7 @@ export const en: Messages = {
   nav: {
     home: "Home",
     event: "Event",
+    venue: "Venue",
     circles: "Circle",
     about: "About",
     contact: "Contact",

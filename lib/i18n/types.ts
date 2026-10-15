@@ -13,6 +13,7 @@ export type Messages = {
   nav: {
     home: string;
     event: string;
+    venue: string;
     circles: string;
     about: string;
     contact: string;
