@@ -44,9 +44,7 @@ export default function Header() {
 
   return (
     <header
-      className={`${styles.header} ${isHome ? styles.headerHome : ""} ${
-        useDark ? styles.headerDark : styles.headerSolid
-      }`}
+      className={`${styles.header} ${useDark ? styles.headerDark : styles.headerSolid}`}
     >
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>

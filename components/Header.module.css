@@ -29,12 +29,6 @@
   border-bottom: none;
 }
 
-.headerHome .inner {
-  max-width: none;
-  padding-left: max(1.25rem, 6.6%);
-  padding-right: max(1.25rem, 3.5%);
-}
-
 .inner {
   position: relative;
   z-index: 1;
