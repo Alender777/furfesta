@@ -204,6 +204,11 @@ export const zhTW: Messages = {
     label: "活動場館",
     name: "南港瓶蓋工廠台北製造所",
     halls: "A2棟 + F棟",
+    mapAlt: "南港瓶蓋工廠台北製造所會場地圖。自南港站沿忠孝東路七段252巷步行可達。",
+    addressLabel: "地址",
+    address: "台北市南港區南港路二段13號",
+    googleMapTitle: "Google 地圖",
+    openMap: "在 Google 地圖中開啟",
   },
   volunteerPage: {
     title: "志工招募",

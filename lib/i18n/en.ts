@@ -204,6 +204,11 @@ export const en: Messages = {
     label: "Venue",
     name: "Nangang Bottle Cap Factory (POPOP Taipei)",
     halls: "Building A2 + Building F",
+    mapAlt: "Map of Nangang Bottle Cap Factory (POPOP Taipei). Walk from Nangang Station along Lane 252, Zhongxiao East Road Section 7.",
+    addressLabel: "Address",
+    address: "No. 13, Section 2, Nangang Road, Nangang District, Taipei",
+    googleMapTitle: "Google Map",
+    openMap: "Open in Google Maps",
   },
   volunteerPage: {
     title: "Volunteer",

@@ -210,6 +210,11 @@ export const ko: Messages = {
     label: "행사장",
     name: "남강 병뚜껑 공장 타이베이 제조소",
     halls: "A2동 + F동",
+    mapAlt: "남강 병뚜껑 공장 타이베이 제조소 행사장 지도. 남강역에서 충샤오 동로 7단 252항을 따라 걸으면 도착합니다.",
+    addressLabel: "주소",
+    address: "타이베이시 난강구 난강로 2단 13호",
+    googleMapTitle: "Google 지도",
+    openMap: "Google 지도에서 열기",
   },
   volunteerPage: {
     title: "자원봉사 모집",

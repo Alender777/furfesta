@@ -149,6 +149,11 @@ export type Messages = {
     label: string;
     name: string;
     halls: string;
+    mapAlt: string;
+    addressLabel: string;
+    address: string;
+    googleMapTitle: string;
+    openMap: string;
   };
   volunteerPage: {
     title: string;
