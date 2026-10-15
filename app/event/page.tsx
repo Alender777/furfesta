@@ -4,7 +4,7 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "活動資訊",
-  description: "FurFesta 2027 活動日程、入場時間、票務與會場資訊。",
+  description: "歡迎，恩扎的遠客。FurFesta 活動故事。",
   path: "/event",
 });
 

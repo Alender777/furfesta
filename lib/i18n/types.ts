@@ -130,6 +130,8 @@ export type Messages = {
   common: { tbd: string; refNote: string; comingSoon: string; comingSoonDesc: string };
   eventPage: {
     title: string;
+    storyTitle: string;
+    story: string[];
   };
   circlesPage: {
     title: string;

@@ -1,0 +1,19 @@
+.story {
+  padding: 3.5rem 0 5.5rem;
+}
+
+.body {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.paragraph {
+  margin: 0 0 1.15rem;
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: 2;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
