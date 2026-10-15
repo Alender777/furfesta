@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publicAsset } from "@/lib/publicAsset";
 
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
@@ -65,7 +66,7 @@ export function buildPageMetadata({ title, description, path }: PageSeo): Metada
       type: "website",
       images: [
         {
-          url: "/images/og.png",
+          url: "images/og.png",
           width: 1200,
           height: 630,
           alt: siteBrand,
@@ -76,7 +77,7 @@ export function buildPageMetadata({ title, description, path }: PageSeo): Metada
       card: "summary_large_image",
       title: fullTitle,
       description,
-      images: ["/images/og.png"],
+      images: ["images/og.png"],
     },
   };
 }
@@ -89,8 +90,8 @@ export const rootMetadata: Metadata = {
   },
   description: defaultDescription,
   icons: {
-    icon: [{ url: "/images/favicon.png", type: "image/png" }],
-    apple: [{ url: "/images/apple-touch-icon.png", type: "image/png" }],
+    icon: [{ url: publicAsset("/images/favicon.png"), type: "image/png" }],
+    apple: [{ url: publicAsset("/images/apple-touch-icon.png"), type: "image/png" }],
   },
   alternates: {
     canonical: siteUrl,
@@ -106,7 +107,7 @@ export const rootMetadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og.png",
+        url: "images/og.png",
         width: 1200,
         height: 630,
         alt: siteBrand,
@@ -117,6 +118,6 @@ export const rootMetadata: Metadata = {
     card: "summary_large_image",
     title: buildPageTitle("首頁"),
     description: defaultDescription,
-    images: ["/images/og.png"],
+    images: ["images/og.png"],
   },
 };

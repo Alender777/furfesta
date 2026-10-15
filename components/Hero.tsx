@@ -2,6 +2,7 @@
 
 import Countdown from "@/components/Countdown";
 import { getEventBrand } from "@/lib/i18n";
+import { publicAsset } from "@/lib/publicAsset";
 import { useLocale } from "@/contexts/LocaleContext";
 import styles from "./Hero.module.css";
 
@@ -14,9 +15,9 @@ export default function Hero() {
       <h1 className={styles.srOnly}>{brand}</h1>
       <div className={styles.frame}>
         <picture className={styles.bgPicture}>
-          <source media="(max-width: 768px)" srcSet="/images/hero-mobile-bg.webp" />
+          <source media="(max-width: 768px)" srcSet={publicAsset("/images/hero-mobile-bg.webp")} />
           <img
-            src="/images/hero-desktop.jpg"
+            src={publicAsset("/images/hero-desktop.jpg")}
             alt=""
             width={2400}
             height={838}
@@ -25,8 +26,8 @@ export default function Hero() {
           />
         </picture>
         <picture className={styles.fgPicture}>
-          <source media="(max-width: 768px)" srcSet="/images/hero-mobile-fg.webp" />
-          <img src="/images/pixel.gif" alt="" className={styles.fg} />
+          <source media="(max-width: 768px)" srcSet={publicAsset("/images/hero-mobile-fg.webp")} />
+          <img src={publicAsset("/images/pixel.gif")} alt="" className={styles.fg} />
         </picture>
       </div>
 

@@ -8,6 +8,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { useLocale } from "@/contexts/LocaleContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { getEventBrand } from "@/lib/i18n";
+import { publicAsset } from "@/lib/publicAsset";
 import { navItems, type NavKey } from "@/lib/nav";
 import styles from "./Header.module.css";
 
@@ -50,7 +51,7 @@ export default function Header() {
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
           <Image
-            src="/images/logo-wolf.png"
+            src={publicAsset("/images/logo-wolf.png")}
             alt={brand}
             width={540}
             height={640}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/publicAsset";
 import styles from "./Gallery.module.css";
 
 type GalleryImage = {
@@ -21,7 +22,7 @@ export default function Gallery({ images }: GalleryProps) {
         >
           <div className={styles.imageWrap}>
             <Image
-              src={image.src}
+              src={publicAsset(image.src)}
               alt={image.alt}
               fill
               sizes="(max-width: 768px) 50vw, 33vw"

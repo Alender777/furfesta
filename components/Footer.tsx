@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "@/contexts/LocaleContext";
 import { getEventBrand } from "@/lib/i18n";
+import { publicAsset } from "@/lib/publicAsset";
 import { siteData } from "@/data/site";
 import SocialIconLink from "@/components/SocialIconLink";
 import socialStyles from "@/components/SocialIconLink.module.css";
@@ -22,7 +23,7 @@ export default function Footer() {
         <div className={styles.top}>
           <Link href="/" className={styles.brand}>
             <Image
-              src="/images/logo-lockup-footer.png"
+              src={publicAsset("/images/logo-lockup-footer.png")}
               alt={brand}
               width={606}
               height={832}
