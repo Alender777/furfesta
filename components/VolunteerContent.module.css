@@ -1,35 +1,137 @@
-.hero h1.title {
-  margin: 0;
-  line-height: 0;
+.hero {
+  margin-top: var(--header-height);
+  background: #f4ede3;
+  overflow: hidden;
 }
 
-.hero h1.title::after {
-  content: none;
-}
-
-.banner {
-  display: block;
-  width: min(100%, 880px);
-  height: auto;
+.heroInner {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.82fr) minmax(18rem, 1.18fr);
+  align-items: center;
+  gap: 1rem;
+  max-width: var(--max-width);
   margin: 0 auto;
+  padding: 1.25rem 2rem 0;
 }
 
-.period {
-  margin-top: 1.35rem;
-  color: var(--color-text-muted);
-  font-weight: 400;
+.copy h1 {
+  margin: 0;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 4.6vw, 4rem);
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+}
+
+.kicker {
+  margin: 0.55rem 0 0;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: clamp(0.82rem, 1.35vw, 1.05rem);
   letter-spacing: 0.14em;
+  line-height: 1.4;
+}
+
+.artWrap {
+  position: relative;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fade {
+  display: none;
+}
+
+.periodBox {
+  margin: 0 0 2.75rem;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid #1a1a1a;
+  text-align: center;
+}
+
+.periodLabel {
+  margin: 0;
+  color: #1a1a1a;
+  font-weight: 500;
+  letter-spacing: 0.18em;
 }
 
 .periodValue {
-  display: block;
-  margin-top: 0.4rem;
+  margin: 0.55rem 0 0;
+  color: #1a1a1a;
+  font-weight: 400;
   letter-spacing: 0.04em;
-  color: var(--color-text);
 }
 
 .section {
-  padding: 3.5rem 0 5.5rem;
+  padding: 2.75rem 0 5.5rem;
+}
+
+@media (max-width: 1024px) {
+  .heroInner {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background: var(--color-bg);
+  }
+
+  .heroInner {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: none;
+    padding: 0;
+  }
+
+  .artWrap {
+    order: -1;
+    width: 100%;
+  }
+
+  .art {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .fade {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 48%;
+    background: linear-gradient(
+      to bottom,
+      rgba(250, 248, 245, 0) 0%,
+      rgba(250, 248, 245, 0.2) 28%,
+      rgba(250, 248, 245, 0.78) 68%,
+      var(--color-bg) 100%
+    );
+    pointer-events: none;
+  }
+
+  .copy {
+    padding: 0.2rem 1.25rem 0.35rem;
+    text-align: center;
+  }
+
+  .copy h1 {
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+  }
+
+  .kicker {
+    margin-top: 0.35rem;
+    font-size: 0.72rem;
+  }
 }
 
 .body {

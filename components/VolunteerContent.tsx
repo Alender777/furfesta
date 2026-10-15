@@ -34,27 +34,33 @@ export default function VolunteerContent() {
 
   return (
     <>
-      <div className={`page-hero ${styles.hero}`}>
-        <div className="container">
-          <h1 className={styles.title}>
+      <section className={styles.hero}>
+        <div className={styles.heroInner}>
+          <div className={styles.copy}>
+            <h1>{page.title}</h1>
+            <p className={styles.kicker}>VOLUNTEER RECRUITMENT</p>
+          </div>
+          <div className={styles.artWrap}>
             <Image
-              src={publicAsset("/images/volunteer-title.png")}
-              alt={page.title}
-              width={1024}
-              height={256}
+              src={publicAsset("/images/volunteer-characters.png")}
+              alt=""
+              width={612}
+              height={268}
               priority
-              className={styles.banner}
+              className={styles.art}
             />
-          </h1>
-          <p className={styles.period}>
-            <span className={styles.periodLabel}>{page.periodLabel}</span>
-            {page.period ? <span className={styles.periodValue}>{page.period}</span> : null}
-          </p>
+            <div className={styles.fade} aria-hidden="true" />
+          </div>
         </div>
-      </div>
+      </section>
 
       <section className={styles.section}>
         <div className={`container ${styles.body}`}>
+          <div className={styles.periodBox}>
+            <p className={styles.periodLabel}>{page.periodLabel}</p>
+            {page.period ? <p className={styles.periodValue}>{page.period}</p> : null}
+          </div>
+
           <div className={styles.block}>
             <h2 className={styles.heading}>{page.noticeTitle}</h2>
             <ul className={styles.notices}>
