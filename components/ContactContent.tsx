@@ -74,7 +74,7 @@ export default function ContactContent() {
         <div className="contact-more">
           <h2>{t.contact.moreTitle}</h2>
           <p>{t.contact.moreDesc}</p>
-          <Link href="/event" className="btn btn-ghost">
+          <Link href="/circles" className="btn btn-ghost">
             {t.contact.moreLink}
           </Link>
         </div>

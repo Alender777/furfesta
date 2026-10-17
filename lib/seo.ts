@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { showStoryPage } from "@/lib/nav";
 import { publicAsset } from "@/lib/publicAsset";
 
 export const siteUrl =
@@ -20,7 +21,7 @@ export const hrefLangMap = {
   "x-default": siteUrl,
 } as const;
 
-export const publicRoutes = [
+const publicRouteList = [
   { path: "/", changeFrequency: "weekly" as const, priority: 1 },
   { path: "/event", changeFrequency: "weekly" as const, priority: 0.9 },
   { path: "/circles", changeFrequency: "weekly" as const, priority: 0.9 },
@@ -32,6 +33,10 @@ export const publicRoutes = [
   { path: "/notes", changeFrequency: "monthly" as const, priority: 0.7 },
   { path: "/register", changeFrequency: "weekly" as const, priority: 0.8 },
 ];
+
+export const publicRoutes = publicRouteList.filter(
+  (route) => showStoryPage || route.path !== "/event"
+);
 
 type PageSeo = {
   title: string;
