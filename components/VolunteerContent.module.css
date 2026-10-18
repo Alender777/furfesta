@@ -6,12 +6,17 @@
 
 .heroInner {
   display: grid;
-  grid-template-columns: minmax(15rem, 0.64fr) minmax(22rem, 1.36fr);
+  grid-template-columns: minmax(15rem, 24rem) minmax(0, 1fr);
   align-items: center;
-  gap: 1.5rem;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0.55rem 2rem 0;
+  gap: clamp(1rem, 2vw, 2rem);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 0 0 max(1.25rem, calc((100% - var(--max-width)) / 2 + 2rem));
+}
+
+.copy {
+  padding: 1.5rem 0;
 }
 
 .copy h1 {
@@ -39,6 +44,7 @@
 .art {
   display: block;
   width: 100%;
+  max-width: none;
   height: auto;
 }
 
@@ -73,7 +79,6 @@
 
 @media (max-width: 1024px) {
   .heroInner {
-    padding-right: 1.25rem;
     padding-left: 1.25rem;
   }
 }
