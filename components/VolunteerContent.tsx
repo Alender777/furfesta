@@ -29,7 +29,7 @@ function Lines({ text }: { text: string }) {
 }
 
 export default function VolunteerContent() {
-  const { t } = useLocale();
+  const { locale, t } = useLocale();
   const page = t.volunteerPage;
 
   return (
@@ -38,7 +38,7 @@ export default function VolunteerContent() {
         <div className={styles.heroInner}>
           <div className={styles.copy}>
             <h1>{page.title}</h1>
-            <p className={styles.kicker}>VOLUNTEER RECRUITMENT</p>
+            {locale !== "en" ? <p className={styles.kicker}>VOLUNTEER RECRUITMENT</p> : null}
           </div>
           <div className={styles.artWrap}>
             <Image
