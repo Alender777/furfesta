@@ -1,5 +1,10 @@
-@media (min-width: 769px) {
-  .line {
-    display: block;
-  }
+.copy {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+:global(.page-hero) .copy p {
+  max-width: none;
+  margin-top: 0.85rem;
+  line-height: 1.9;
 }

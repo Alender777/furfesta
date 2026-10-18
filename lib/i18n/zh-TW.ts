@@ -9,6 +9,14 @@ export const zhTW: Messages = {
     about: "關於",
     contact: "聯絡",
     login: "會員登入",
+    openMenu: "開啟選單",
+    closeMenu: "關閉選單",
+    language: "語言",
+  },
+  notFound: {
+    title: "找不到頁面",
+    description: "您所尋找的頁面不存在，或已被移除。",
+    backHome: "返回首頁",
   },
   event: {
     name: "FurFesta",
@@ -131,7 +139,7 @@ export const zhTW: Messages = {
     searchPlaceholder: "搜尋攤位編號或社團名稱…",
     searchLabel: "搜尋攤位",
     results: "找到 {count} 筆結果",
-    zone: "區",
+    zone: "{zone} 區",
     noResults: "找不到符合的攤位，請嘗試其他關鍵字。",
   },
   contact: {
@@ -151,7 +159,7 @@ export const zhTW: Messages = {
     facebookAria: "前往 Facebook 粉專",
   },
   footer: {
-    copyright: "籌備小組",
+    copyright: "FUR FESTA 團隊",
     emailAria: "寄信至官方信箱",
     plurkAria: "前往 Plurk",
   },
@@ -175,7 +183,7 @@ export const zhTW: Messages = {
       "這個恩扎部落和你想像中的部落相差甚遠，你把這個想法告訴狄倫。",
       "「或許其他部落確實是同一種族為主，但我們恩扎部落可不一樣。恩扎的意思是包容與生命，我們希望能讓所有來到這裡的夥伴感受到歸屬。」",
       "狄倫邊說邊跟坐在一間屋子前的白熊揮手。",
-      "「那位是我們部落的弗雷德老爺子，是我們侍衛長的顧問。」",
+      "「那位是我們部落的佛雷德老爺子，是我們侍衛長的顧問。」",
       "狄倫一邊跟你咬耳朵一邊跟那頭和藹的白熊打招呼。",
       "「是新來的遠客，真是太好了！」",
       "佛雷德的笑聲有如驚雷，震得你耳朵發癢。同時他的手掌拍在你的背上，出乎意料的是，那力道非常溫和。",

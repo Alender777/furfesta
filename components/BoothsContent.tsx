@@ -63,7 +63,7 @@ export default function BoothsContent() {
           {filteredZones.map((zone) => (
             <div key={zone.zone}>
               <h3 className="booth-zone-title">
-                {zone.zone} {t.booths.zone}
+                {t.booths.zone.replace("{zone}", zone.zone)}
               </h3>
               <SymmetricGrid columns={4} variant="booth">
                 {zone.booths.map((booth) => (

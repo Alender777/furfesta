@@ -8,6 +8,7 @@ import {
   useMemo,
   useState,
 } from "react";
+import { usePathname } from "next/navigation";
 import {
   getMessages,
   isLocale,
@@ -15,6 +16,8 @@ import {
   type Locale,
 } from "@/lib/i18n";
 import type { Messages } from "@/lib/i18n/types";
+import { showStoryPage } from "@/lib/nav";
+import { siteBrand } from "@/lib/seo";
 
 type LocaleContextValue = {
   locale: Locale;
@@ -24,7 +27,30 @@ type LocaleContextValue = {
 
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
+function pageTitle(pathname: string, t: Messages): string {
+  const base = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "");
+  let path = pathname.split("?")[0].replace(/\/$/, "") || "/";
+  if (base && path.startsWith(base)) path = path.slice(base.length) || "/";
+  if (path === "/event" && !showStoryPage) return t.notFound.title;
+
+  const titles: Record<string, string> = {
+    "/": t.nav.home,
+    "/about": t.nav.about,
+    "/booths": t.booths.title,
+    "/circles": t.nav.circles,
+    "/contact": t.nav.contact,
+    "/event": t.nav.event,
+    "/notes": t.pages.notes,
+    "/register": t.pages.register,
+    "/venue": t.venuePage.title,
+    "/volunteer": t.volunteerPage.title,
+  };
+
+  return titles[path] ?? t.notFound.title;
+}
+
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
   const [locale, setLocaleState] = useState<Locale>("zh-TW");
   const [ready, setReady] = useState(false);
 
@@ -46,7 +72,8 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
           : locale === "ko"
             ? "ko"
             : "en";
-  }, [locale, ready]);
+    document.title = `${siteBrand}｜${pageTitle(pathname, getMessages(locale))}`;
+  }, [locale, pathname, ready]);
 
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next);

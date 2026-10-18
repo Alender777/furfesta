@@ -13,8 +13,8 @@ function Lines({ text }: { text: string }) {
       {lines.map((line, lineIndex) => (
         <Fragment key={line}>
           {lineIndex > 0 && <br />}
-          {line.split(/(\d{2}：\d{2})/g).map((part, partIndex) =>
-            /^\d{2}：\d{2}$/.test(part) ? (
+          {line.split(/(\d{2}[：:]\d{2})/g).map((part, partIndex) =>
+            /^\d{2}[：:]\d{2}$/.test(part) ? (
               <span className={styles.time} key={`${lineIndex}-${partIndex}`}>
                 {part}
               </span>

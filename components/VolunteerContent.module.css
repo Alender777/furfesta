@@ -6,12 +6,12 @@
 
 .heroInner {
   display: grid;
-  grid-template-columns: minmax(16rem, 0.82fr) minmax(18rem, 1.18fr);
+  grid-template-columns: minmax(15rem, 0.64fr) minmax(22rem, 1.36fr);
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1.25rem 2rem 0;
+  padding: 0.55rem 2rem 0;
 }
 
 .copy h1 {

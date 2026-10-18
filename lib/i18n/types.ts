@@ -18,6 +18,14 @@ export type Messages = {
     about: string;
     contact: string;
     login: string;
+    openMenu: string;
+    closeMenu: string;
+    language: string;
+  };
+  notFound: {
+    title: string;
+    description: string;
+    backHome: string;
   };
   event: {
     name: string;

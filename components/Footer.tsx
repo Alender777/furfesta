@@ -58,9 +58,7 @@ export default function Footer() {
               <EmailIcon size={22} />
             </SocialIconLink>
           </div>
-        <p className={styles.copyright}>
-          © {new Date().getFullYear()} {brand} {t.footer.copyright}
-        </p>
+        <p className={styles.copyright}>{t.footer.copyright}</p>
       </div>
     </footer>
   );

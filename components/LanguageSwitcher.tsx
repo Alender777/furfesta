@@ -13,7 +13,7 @@ type LanguageSwitcherProps = {
 export default function LanguageSwitcher({
   variant = "dark",
 }: LanguageSwitcherProps) {
-  const { locale, setLocale } = useLocale();
+  const { locale, setLocale, t } = useLocale();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
 
@@ -42,7 +42,7 @@ export default function LanguageSwitcher({
         type="button"
         className={styles.globeBtn}
         onClick={() => setOpen((prev) => !prev)}
-        aria-label="Language"
+        aria-label={t.nav.language}
         aria-expanded={open}
         aria-haspopup="listbox"
       >
@@ -50,7 +50,7 @@ export default function LanguageSwitcher({
       </button>
 
       {open && (
-        <ul className={styles.menu} role="listbox" aria-label="Language">
+        <ul className={styles.menu} role="listbox" aria-label={t.nav.language}>
           {locales.map((code) => (
             <li key={code}>
               <button

@@ -92,7 +92,7 @@ export default function Header() {
             type="button"
             className={`${styles.menuBtn} ${menuOpen ? styles.menuBtnOpen : ""}`}
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-label={menuOpen ? t.nav.closeMenu : t.nav.openMenu}
             aria-expanded={menuOpen}
           >
             <span />
