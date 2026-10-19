@@ -239,7 +239,7 @@ export const en: Messages = {
       "Please read the full duties and benefits, and sign up only if you are ready to help with this event.",
       "Applicants must be at least 18 years old.",
       "Eat breakfast before the morning meet-up. Do not work on an empty stomach.",
-      "Do not leave your post without permission from a captain-level staff member.",
+      "Do not leave your post without permission from a manager-level staff member.",
       "If illness, an accident, or another emergency before the event keeps you from attending, report it immediately.",
       "An unexcused absence means future applications to take part in this event will not be accepted.",
     ],
