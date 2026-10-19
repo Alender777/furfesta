@@ -1,0 +1,54 @@
+.banner {
+  position: relative;
+  margin-top: var(--header-height);
+  background: #c8c0b6;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.copy {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  text-align: center;
+  color: #fff;
+  pointer-events: none;
+}
+
+.copy h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 5vw, 4.25rem);
+  letter-spacing: 0.16em;
+  line-height: 1.15;
+}
+
+.copy p {
+  margin: 0.7rem 0 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .copy h1 {
+    font-size: 2.35rem;
+    letter-spacing: 0.14em;
+  }
+
+  .copy p {
+    margin-top: 0.45rem;
+    font-size: 0.92rem;
+  }
+}

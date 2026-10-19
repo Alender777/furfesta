@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import PageBanner from "@/components/PageBanner";
 import Section from "@/components/Section";
 import SymmetricGrid from "@/components/SymmetricGrid";
 import SocialIconLink from "@/components/SocialIconLink";
@@ -19,13 +20,11 @@ export default function ContactContent() {
 
   return (
     <>
-      <div className="page-hero">
-        <div className="container">
-          <p className="eyebrow">Contact</p>
-          <h1>{t.contact.title}</h1>
-          <p>{t.contact.pageSubtitle}</p>
-        </div>
-      </div>
+      <PageBanner
+        name="contact"
+        title={t.pageBanner.contact.title}
+        subtitle={t.pageBanner.contact.subtitle}
+      />
 
       <Section>
         <SymmetricGrid columns={3} variant="highlight">

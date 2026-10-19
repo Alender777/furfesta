@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import PageBanner from "@/components/PageBanner";
 import { useLocale } from "@/contexts/LocaleContext";
 import type { Locale } from "@/lib/i18n";
 import { publicAsset } from "@/lib/publicAsset";
@@ -24,13 +25,11 @@ export default function VenueContent() {
 
   return (
     <>
-      <div className="page-hero">
-        <div className="container">
-          <p className="eyebrow">{page.label}</p>
-          <h1>{page.title}</h1>
-          <p>{page.subtitle}</p>
-        </div>
-      </div>
+      <PageBanner
+        name="venue"
+        title={t.pageBanner.venue.title}
+        subtitle={t.pageBanner.venue.subtitle}
+      />
       <section className={styles.section}>
         <div className={`container ${styles.wrap}`}>
           <div className={styles.card}>

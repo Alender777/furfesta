@@ -199,6 +199,15 @@ export const zhTW: Messages = {
       "「就這樣決定了，歡迎你！我們優秀的新秀獵人！明日，恩扎部落將會重返山上的狩獵場，屆時還請你助我們一臂之力！」",
     ],
   },
+  pageBanner: {
+    about: { title: "關於", subtitle: "關於活動團隊" },
+    venue: { title: "會場", subtitle: "活動主辦場地" },
+    contact: { title: "聯絡", subtitle: "聯絡主辦團隊" },
+    circles: { title: "社團", subtitle: "社團報名資訊" },
+    notes: { title: "注意", subtitle: "注意事項規範" },
+    event: { title: "活動", subtitle: "活動行程內容" },
+    register: { title: "報名", subtitle: "活動入場報名" },
+  },
   circlesPage: { title: "社團" },
   pages: {
     volunteer: "志工招募",

@@ -199,6 +199,15 @@ export const en: Messages = {
       "\"Then it is decided. Welcome, our fine new hunter! Tomorrow the Enza tribe returns to the hunting grounds on the mountain. We will be counting on you!\"",
     ],
   },
+  pageBanner: {
+    about: { title: "About", subtitle: "About the team" },
+    venue: { title: "Venue", subtitle: "Event venue" },
+    contact: { title: "Contact", subtitle: "Contact the organizers" },
+    circles: { title: "Circles", subtitle: "Circle registration" },
+    notes: { title: "Notice", subtitle: "Rules and notes" },
+    event: { title: "Event", subtitle: "Event schedule" },
+    register: { title: "Register", subtitle: "Event admission" },
+  },
   circlesPage: { title: "Circles" },
   pages: {
     volunteer: "Volunteer",

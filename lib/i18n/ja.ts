@@ -200,6 +200,15 @@ export const ja: Messages = {
       "「これで決まりだ。ようこそ、我らが優秀な新米狩人よ！明日、エンザは山の狩場へ戻る。そのときはどうか力を貸してくれ！」",
     ],
   },
+  pageBanner: {
+    about: { title: "概要", subtitle: "運営チームについて" },
+    venue: { title: "会場", subtitle: "イベント会場" },
+    contact: { title: "お問い合わせ", subtitle: "運営チームへの連絡" },
+    circles: { title: "サークル", subtitle: "サークル申込案内" },
+    notes: { title: "注意", subtitle: "注意事項" },
+    event: { title: "イベント", subtitle: "イベント内容" },
+    register: { title: "申込", subtitle: "入場申込" },
+  },
   circlesPage: { title: "サークル" },
   pages: {
     volunteer: "スタッフ募集",

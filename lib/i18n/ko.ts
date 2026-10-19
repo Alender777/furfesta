@@ -205,6 +205,15 @@ export const ko: Messages = {
       "「그렇게 결정됐네. 환영한다, 우리의 훌륭한 신입 사냥꾼! 내일 엔자 부족은 산의 사냥터로 돌아간다. 그때 한 팔 보태 주게!」",
     ],
   },
+  pageBanner: {
+    about: { title: "소개", subtitle: "운영팀 소개" },
+    venue: { title: "장소", subtitle: "행사 장소" },
+    contact: { title: "문의", subtitle: "운영팀 문의" },
+    circles: { title: "서클", subtitle: "서클 신청 안내" },
+    notes: { title: "주의", subtitle: "참가 유의사항" },
+    event: { title: "행사", subtitle: "행사 일정" },
+    register: { title: "신청", subtitle: "입장 신청" },
+  },
   circlesPage: { title: "서클" },
   pages: {
     volunteer: "자원봉사 모집",

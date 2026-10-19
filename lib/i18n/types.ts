@@ -142,6 +142,15 @@ export type Messages = {
     storyTitle: string;
     story: string[];
   };
+  pageBanner: {
+    about: { title: string; subtitle: string };
+    venue: { title: string; subtitle: string };
+    contact: { title: string; subtitle: string };
+    circles: { title: string; subtitle: string };
+    notes: { title: string; subtitle: string };
+    event: { title: string; subtitle: string };
+    register: { title: string; subtitle: string };
+  };
   circlesPage: {
     title: string;
   };
