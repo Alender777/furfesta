@@ -49,10 +49,10 @@ export default function VenueContent() {
 
           <figure className={styles.mapBlock}>
             <Image
-              src={publicAsset("/images/FF1.png")}
+              src={publicAsset("/images/FF1.jpg")}
               alt={page.mapAlt}
-              width={2894}
-              height={2039}
+              width={2400}
+              height={1691}
               className={styles.mapImage}
             />
           </figure>

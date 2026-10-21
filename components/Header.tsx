@@ -47,14 +47,13 @@ export default function Header() {
       className={`${styles.header} ${useDark ? styles.headerDark : styles.headerSolid}`}
     >
       <div className={`container ${styles.inner}`}>
-        <Link href="/" className={styles.logo} onClick={closeMenu}>
+        <Link href="/" className={styles.logo} onClick={closeMenu} prefetch={false}>
           <Image
             src={publicAsset("/images/logo-wolf.png")}
             alt={brand}
-            width={540}
-            height={640}
+            width={128}
+            height={152}
             className={styles.logoImage}
-            priority
           />
         </Link>
 
@@ -65,6 +64,7 @@ export default function Header() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
+                    prefetch={false}
                     className={`${styles.navLink} ${
                       pathname === item.href ? styles.navLinkActive : ""
                     }`}
@@ -106,6 +106,7 @@ export default function Header() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
+                    prefetch={false}
                     className={`${styles.navLink} ${
                       pathname === item.href ? styles.navLinkActive : ""
                     }`}

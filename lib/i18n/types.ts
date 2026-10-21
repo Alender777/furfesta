@@ -160,6 +160,11 @@ export type Messages = {
     notes: string;
     register: string;
   };
+  notesPage: {
+    title: string;
+    leads: string[];
+    rules: string[];
+  };
   venuePage: {
     title: string;
     subtitle: string;

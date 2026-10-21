@@ -13,7 +13,7 @@ export default function NotFoundView() {
         <h1>{t.notFound.title}</h1>
         <p style={{ marginTop: "1.25rem" }}>{t.notFound.description}</p>
         <p style={{ marginTop: "2rem" }}>
-          <Link href="/" className="btn btn-primary">
+          <Link href="/" className="btn btn-primary" prefetch={false}>
             {t.notFound.backHome}
           </Link>
         </p>

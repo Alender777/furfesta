@@ -2,13 +2,13 @@ import { publicAsset } from "@/lib/publicAsset";
 import styles from "./PageBanner.module.css";
 
 const banners = {
-  about: { pc: [6104, 1352], mob: [2039, 1407] },
-  venue: { pc: [6104, 1352], mob: [2039, 1407] },
-  contact: { pc: [6104, 1352], mob: [2039, 1407] },
-  circles: { pc: [6104, 1352], mob: [2039, 1407] },
-  notes: { pc: [6104, 1352], mob: [2039, 1407] },
-  event: { pc: [6104, 1352], mob: [2039, 1407] },
-  register: { pc: [6104, 1352], mob: [2039, 1407] },
+  about: { pc: [1920, 425], mob: [960, 662] },
+  venue: { pc: [1920, 425], mob: [960, 662] },
+  contact: { pc: [1920, 425], mob: [960, 662] },
+  circles: { pc: [1920, 425], mob: [960, 662] },
+  notes: { pc: [1920, 425], mob: [960, 662] },
+  event: { pc: [1920, 425], mob: [960, 662] },
+  register: { pc: [1920, 425], mob: [960, 662] },
 } as const;
 
 export type PageBannerName = keyof typeof banners;
@@ -37,6 +37,7 @@ export default function PageBanner({ name, title, subtitle }: PageBannerProps) {
           width={size.pc[0]}
           height={size.pc[1]}
           className={styles.image}
+          fetchPriority="high"
         />
       </picture>
       <div className={styles.copy}>

@@ -20,12 +20,12 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-          <Link href="/" className={styles.brand}>
+          <Link href="/" className={styles.brand} prefetch={false}>
             <Image
-              src={publicAsset("/images/logo-lockup-footer.png")}
+              src={publicAsset("/images/logo-lockup-footer.jpg")}
               alt={brand}
-              width={606}
-              height={720}
+              width={360}
+              height={428}
               className={styles.logo}
             />
           </Link>
@@ -34,7 +34,7 @@ export default function Footer() {
 
           <nav className={styles.links}>
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className={styles.link}>
+              <Link key={item.href} href={item.href} className={styles.link} prefetch={false}>
                 {t.nav[item.key as NavKey]}
               </Link>
             ))}
