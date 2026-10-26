@@ -253,8 +253,9 @@ export const en: Messages = {
   },
   volunteerPage: {
     title: "Volunteer",
-    periodLabel: "Recruitment period",
+    periodLabel: "Volunteer application form",
     period: "",
+    formUrl: "https://forms.gle/wsKB2gSihfJrmG4g7",
     noticeTitle: "Before you apply",
     notices: [
       "Please read the full duties and benefits, and sign up only if you are ready to help with this event.",

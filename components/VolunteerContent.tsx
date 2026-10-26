@@ -58,7 +58,11 @@ export default function VolunteerContent() {
         <div className={`container ${styles.body}`}>
           <div className={styles.periodBox}>
             <p className={styles.periodLabel}>{page.periodLabel}</p>
-            {page.period ? <p className={styles.periodValue}>{page.period}</p> : null}
+            <p className={styles.periodValue}>
+              <a href={page.formUrl} target="_blank" rel="noopener noreferrer">
+                {page.formUrl}
+              </a>
+            </p>
           </div>
 
           <div className={styles.block}>

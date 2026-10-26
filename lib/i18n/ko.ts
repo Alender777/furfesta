@@ -259,8 +259,9 @@ export const ko: Messages = {
   },
   volunteerPage: {
     title: "자원봉사 모집",
-    periodLabel: "모집 기간",
+    periodLabel: "자원봉사 모집 양식",
     period: "",
+    formUrl: "https://forms.gle/wsKB2gSihfJrmG4g7",
     noticeTitle: "신청 안내",
     notices: [
       "업무 내용과 복지를 모두 확인한 뒤, 이 행사에 힘을 보태고 싶다고 정한 다음 신청해 주세요.",

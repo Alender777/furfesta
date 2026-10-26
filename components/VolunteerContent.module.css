@@ -70,7 +70,18 @@
   margin: 0.55rem 0 0;
   color: #1a1a1a;
   font-weight: 400;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  overflow-wrap: anywhere;
+}
+
+.periodValue a {
+  color: var(--color-accent-dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.periodValue a:hover {
+  color: var(--color-text);
 }
 
 .section {

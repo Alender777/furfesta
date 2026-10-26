@@ -254,8 +254,9 @@ export const ja: Messages = {
   },
   volunteerPage: {
     title: "スタッフ募集",
-    periodLabel: "募集期間",
+    periodLabel: "スタッフ募集フォーム",
     period: "",
+    formUrl: "https://forms.gle/wsKB2gSihfJrmG4g7",
     noticeTitle: "応募にあたって",
     notices: [
       "仕事内容と福利をすべて確認し、このイベントに力を貸したいと決めてから申し込んでください。",

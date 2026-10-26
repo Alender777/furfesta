@@ -253,8 +253,9 @@ export const zhTW: Messages = {
   },
   volunteerPage: {
     title: "志工招募",
-    periodLabel: "招募時間",
+    periodLabel: "志工招募表單",
     period: "",
+    formUrl: "https://forms.gle/wsKB2gSihfJrmG4g7",
     noticeTitle: "申請須知",
     notices: [
       "請務必參閱完整工作內容與福利後，確定想為本活動盡上一份心力再報名。",

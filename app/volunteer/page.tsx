@@ -4,7 +4,7 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "志工招募",
-  description: "FurFesta 志工申請須知、福利與當日工作內容。招募時間待公布。",
+  description: "FurFesta 志工申請須知、福利與當日工作內容。志工招募表單已開放。",
   path: "/volunteer",
 });
 
